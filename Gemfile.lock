@@ -35,6 +35,7 @@ GEM
     autotest-fsevent (0.2.5)
       sys-uname
     autotest-growl (0.2.9)
+    autotest-rails-pure (4.1.2)
     builder (2.1.2)
     configuration (1.2.0)
     diff-lcs (1.1.2)
@@ -112,6 +113,7 @@ DEPENDENCIES
   autotest
   autotest-fsevent
   autotest-growl
+  autotest-rails-pure
   heroku
   rails (= 3.0.9)
   rspec-rails (= 2.6.1)

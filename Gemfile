@@ -14,6 +14,7 @@ end
 
 group :test do
   gem 'autotest'
+  gem 'autotest-rails-pure'
   gem 'autotest-growl'
   gem 'autotest-fsevent'
   gem 'spork', '0.9.0.rc8'
