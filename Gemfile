@@ -13,6 +13,10 @@ group :development do
 end
 
 group :test do
+  gem 'autotest'
+  gem 'autotest-growl'
+  gem 'autotest-fsevent'
+  gem 'spork', '0.9.0.rc8'
   gem 'rspec-rails', '2.6.1'
   gem 'webrat', '0.7.1'
 end
