@@ -18,6 +18,8 @@ class User < ActiveRecord::Base
   attr_accessible :name, :email, :password, :password_confirmation
   before_save :encrypt_password
   
+  has_many :microposts, :dependent => :destroy
+  
   email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   
   validates :name,  :presence => true,
@@ -47,6 +49,10 @@ class User < ActiveRecord::Base
   
   def admin?
     self.admin
+  end
+  
+  def feed
+    Micropost.where("user_id = ?", id)
   end
 private
    def encrypt_password
