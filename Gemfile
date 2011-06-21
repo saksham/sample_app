@@ -7,9 +7,11 @@ gem 'rails', '3.0.9'
 
 gem 'sqlite3'
 gem 'heroku'
+gem 'gravatar_image_tag', '1.0.0'
 
 group :development do
   gem 'rspec-rails', '2.6.1'
+  gem 'annotate-models', '1.0.4'
 end
 
 group :test do
@@ -17,6 +19,7 @@ group :test do
   gem 'autotest-rails-pure'
   gem 'autotest-growl'
   gem 'autotest-fsevent'
+  gem 'factory_girl_rails', '1.0'
   gem 'spork', '0.9.0.rc8'
   gem 'rspec-rails', '2.6.1'
   gem 'webrat', '0.7.1'
